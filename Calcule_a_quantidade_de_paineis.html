@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" >
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="reset.css" />
+        <title> Calcule a quantidade de painéis solares </title>
+    </head>
+    <body class="tx">
+
+        
+        <br>
+        <br>
+        <label>Quantos media de KW você gasta de energia por mes</label>
+        <br>
+        <br>
+        <input type="number" id="number" class="imput" >
+        <input type="button" onclick="calcular()" class="button" >
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <label >Quantidade minima de paineis de 100V para suprir esse gasto</label>
+        <br>
+        <br>
+        <input type="int" id="resultado" class="imput">
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <label >Quantidade minima de paineis de 200V para suprir esse gasto</label>
+        <br>
+        <br>
+        <input type="number" id="resultado2" class="imput">
+
+
+
+        <script>
+            function calcular(){
+                var valor = document.getElementById('number').value
+                var calculo1 = valor / 30 / 24 
+                var calculo2 = valor / 30 / 24
+
+                document.getElementById("resultado").value = calculo1
+                document.getElementById("resultado2").value = calculo2
+            }
+            
+
+
+        </script>
+        
+
+    </body>
+
+</html>
